@@ -1,0 +1,75 @@
+/* Actions Bar */
+
+.actions {
+  background-color: $blackish;
+  /* border-bottom: 1px solid #dedfe0; */
+  /* color: #333333; */
+  padding: $s-size;
+
+  &__container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 70rem;
+    margin: 0 auto;
+    min-height: 5rem;
+    padding: 0 3rem;
+
+    @include respond(phone) {
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    @include respond(big-desktop) {
+      max-width: 100rem;
+    }
+  }
+}
+
+// .actions__container--spaced {
+//   justify-content: space-between;
+// }
+
+/* Input & buttons */
+
+#new-todo {
+  display: flex;
+  align-items: stretch;
+
+  @include respond(phone) {
+    margin-bottom: $m-size;
+  }
+}
+
+.input {
+  @include border-btn;
+  font-size: $m-size;
+  height: $l-size;
+  margin-right: $m-size;
+  padding: 0.8rem;
+}
+
+.button {
+  height: $l-size;
+  background: $dark-blue;
+  @include border-btn;
+  color: $whiteish;
+  font-size: $m-size;
+  margin-right: $m-size;
+  padding: 0.8rem;
+  transition: all 0.3s ease;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &#clear-all {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background: $light-blue;
+    text-decoration: underline;
+  }
+}

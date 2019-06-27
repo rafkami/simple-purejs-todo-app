@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To-do App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="img/todo-favicon.png" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 class="header__title">Simple Todo App</h1>
+        <h2 class="header__subtitle">
+          Just do what you need to do!
+        </h2>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="actions__container">
+        <form id="new-todo" autocomplete="off">
+          <input
+            type="text"
+            class="input"
+            placeholder="Put your next todo here"
+            name="text"
+          />
+          <button class="button" id="add-todo">Add next todo</button>
+        </form>
+        <div class="button-container">
+          <button class="button" id="remove-last">Remove last todo</button>
+          <button class="button" id="clear-all">Clear all todos</button>
+        </div>
+      </div>
+    </div>
+    <div class="list-container">
+      <div id="todos"></div>
+    </div>
+    <footer class="footer">&copy;by rafkami</footer>
+    <script src="scripts/main.bundle.js"></script>
+  </body>
+</html>
