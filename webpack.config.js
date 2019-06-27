@@ -26,7 +26,7 @@ module.exports = {
         use: [
           "style-loader",
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          "css-loader?url=false",
           "postcss-loader",
           "sass-loader"
         ]
