@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "simple-purejs-todo-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,12 @@
     "watch:sass": "node-sass src/sass/main.scss public/css/main.css -w",
     "dev-server": "webpack-dev-server --mode development --watch",
     "start": "npm-run-all --parallel watch:sass dev-server",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d public"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://rafkami.github.io/simple-purejs-todo-app",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.4",
