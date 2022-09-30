@@ -30,7 +30,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "devDependencies": {
-    "@hapi/boom": "^7.4.2",
+    "@hapi/boom": "^7.4.11",
     "@hapi/cryptiles": "^4.2.0",
     "autoprefixer": "^9.6.0",
     "braces": "^3.0.2",
